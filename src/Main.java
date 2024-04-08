@@ -16,45 +16,32 @@ public class Main {
 
             displayArray(intArray);
             displayArray(doubleArray);
-            displayArray(charArray);
-            displayArray(stringArray);
+             displayArray(charArray);
+          displayArray(stringArray);
+
+        System.out.println(getFirstElement(intArray));
+        System.out.println(getFirstElement(doubleArray));
+        System.out.println(getFirstElement(charArray));
+        System.out.println(getFirstElement(stringArray));
+
 
 
     }
 
-    //Display Integer Array
+    //Generic method
 
-    public static  void displayArray(Integer[] array){
-        for(Integer x : array){
+    public static <T> void displayArray(T[] array){
+        for(T x : array){
             System.out.print(x+ " ");
         }
         System.out.println();
     }
 
-    //Display Double Array
-
-    public static  void displayArray(Double[] array){
-        for(Double x : array){
-            System.out.print(x+ " ");
-        }
-        System.out.println();
+    public  static <T> T getFirstElement(T[] array){
+        return  array[0];
     }
 
-    //Display Character Array
 
-    public static  void displayArray(Character[] array){
-        for(Character x : array){
-            System.out.print(x+ " ");
-        }
-        System.out.println();
-    }
 
-    //Display String Array
 
-    public static  void displayArray(String[] array){
-        for(String x : array){
-            System.out.print(x+ " ");
-        }
-        System.out.println();
-    }
 }
