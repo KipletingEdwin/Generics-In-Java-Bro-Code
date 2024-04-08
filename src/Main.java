@@ -2,7 +2,6 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-
         //Generics =    enables types(classes and methods) to be parameters when defining
         //              classes, interfaces and methods
         //              a benefit is to eliminate the need to create multiple visions
@@ -36,6 +35,8 @@ public class Main {
         }
         System.out.println();
     }
+
+
 
     public  static <T> T getFirstElement(T[] array){
         return  array[0];
